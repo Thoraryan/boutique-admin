@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="" />
+      <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+      <title>Boutique</title>
+      <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+      <!-- Linear Icon css -->
+      <link rel="stylesheet" href="assets/css/linearicon.css" />
+      <!-- fontawesome css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/vendors/font-awesome.css" />
+      <!-- Themify icon css-->
+      <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css" />
+      <!-- ratio css -->
+      <!-- <link rel="stylesheet" type="text/css" href="assets/css/ratio.css" /> -->
+      <!-- remixicon css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css" />
+      <!-- Plugins css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css" />
+      <!-- Bootstrap css-->
+      <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css" />
+      <!-- vector map css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/vector-map.css" />
+      <!-- Slick Slider Css -->
+      <link rel="stylesheet" href="assets/css/vendors/slick.css" />
+      <!-- App css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+   </head>
+   <body>
+      <!-- tap on top start -->
+      <div class="tap-top">
+         <span class="lnr lnr-chevron-up"></span>
+      </div>
+      <!-- tap on tap end -->
+      <!-- page-wrapper Start-->
+      <div class="page-wrapper compact-wrapper" id="pageWrapper">
+         <div class="page-header">
+            <div class="header-wrapper m-0">
+               <div class="header-logo-wrapper p-0">
+                  <div class="logo-wrapper">
+                     <a href="dashboard.html"> Boutique Admin </a>
+                  </div>
+                  <div class="toggle-sidebar">
+                     <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
+                     <a href="dashboard.html"> Boutique Admin </a>
+                  </div>
+               </div>
+               <div class="nav-right col-6 pull-right right-header p-0">
+                  <ul class="nav-menus"> 
+                     <li class="profile-nav onhover-dropdown pe-0 me-0">
+                        <div class="media profile-media">
+                           <img class="user-profile rounded-circle" src="assets/images/users/4.jpg" alt="" />
+                           <div class="user-name-hide media-body">
+                              <span>Emay Walter</span>
+                              <p class="mb-0 font-roboto"> Admin <i class="middle ri-arrow-down-s-line"></i>
+                              </p>
+                           </div>
+                        </div>
+                        <ul class="profile-dropdown onhover-show-div">
+                           <li>
+                              <a href="profile.html">
+                              <i class="fas fa-user"></i>
+                              <span>My Profile</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="change-password.html">
+                              <i class="fas fa-sync"></i>
+                              <span>Change Password</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="login.html">
+                              <i class="fas fa-sign-out-alt"></i>
+                              <span>Logout</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div> 
+         <!-- Page Body Start-->
+         <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div class="sidebar-wrapper">
+               <div>
+                  <div class="logo-wrapper logo-wrapper-center">
+                     <a href="dashboard.html" data-bs-original-title="" title=""> Boutique Admin </a>
+                     <div class="back-btn">
+                        <i class="fa fa-angle-left"></i>
+                     </div>
+                     <div class="toggle-sidebar">
+                        <i class="ri-apps-line status_toggle middle sidebar-toggle"></i>
+                     </div>
+                  </div>
+                  <nav class="sidebar-main">
+                     <div class="left-arrow" id="left-arrow">
+                        <i data-feather="arrow-left"></i>
+                     </div>
+                     <div id="sidebar-menu">
+                        <ul class="sidebar-links" id="simple-bar">
+                           <li class="back-btn"></li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="dashboard.html">
+                              <i class="fas fa-home"></i>
+                              <span>Dashboard</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="users-management.html">
+                              <i class="fas fa-user"></i>
+                              <span>Users Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="merchants-management.html">
+                              <i class="fas fa-store"></i>
+                              <span>Merchants Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="item-management.html">
+                              <i class="fas fa-cart-arrow-down"></i>
+                              <span>Item Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="sub-admin-management.html">
+                              <i class="fas fa-users"></i>
+                              <span>Sub Admin Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="orders-management.html">
+                              <i class="fas fa-box-open"></i>
+                              <span>Orders Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="billing-management.html">
+                              <i class="fas fa-file-invoice"></i>
+                              <span>Billing Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="promotion-code-management.html">
+                              <i class="fas fa-tag"></i>
+                              <span>Promotion Code Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="category-management.html">
+                              <i class="fas fa-th-list"></i>
+                              <span>Category Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                              <i class="fas fa-bell"></i>
+                              <span>Notification</span>
+                              </a>
+                              <ul class="sidebar-submenu">
+                                 <li>
+                                    <a href="notifications.html">Notifications</a>
+                                 </li>
+                                 <li>
+                                    <a href="push-notifications.html">Push Notifications</a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="transaction-management.html">
+                              <i class="fas fa-sync"></i>
+                              <span>Transaction Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="help-support-management.html">
+                              <i class="fas fa-headset"></i>
+                              <span>Help & Support Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav" href="content-management.html">
+                              <i class="fas fa-edit"></i>
+                              <span>Content Management</span>
+                              </a>
+                           </li>
+                           <li class="sidebar-list">
+                              <a class="sidebar-link sidebar-title link-nav"  data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="javascript:;">
+                              <i class="fas fa-sign-out-alt"></i>
+                              <span>Logout</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="right-arrow" id="right-arrow">
+                        <i data-feather="arrow-right"></i>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+            <!-- Page Sidebar Ends-->
+            <!-- index body start -->
+            <div class="page-body">
+               <div class="container-fluid">
+                  <div class="row"> 
+                     <div class="col-12 mb-4">
+                        <div class="row justify-content-end">
+                           <div class="col-auto">
+                              <a class="btn btn-solid" href="javascript:;">Export As</a>
+                           </div>  
+                        </div>
+                     </div>
+                     <div class="col-sm-12">
+                        <div class="card card-table">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col">
+                                     <div class="title-header option-title d-sm-flex d-block">
+                                        <h5>Orders Management</h5>
+                                     </div>
+                                  </div>  
+                                  <div class="col-auto d-flex align-items-center">
+                                    <form class="table_searcch" action="">
+                                       <div class="d-flex align-items-center">
+                                          <label class="mb-0 me-3" for="">Serach:</label>
+                                          <input type="text" class="form-control">
+                                       </div>
+                                    </form>
+                                    <a class="filter_btn" data-bs-toggle="modal" data-bs-target="#filter" href="javascript:;"><i class="fas fa-filter"></i></a>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                      <table class="table all-package theme-table table-product" id="">
+                                        <thead>
+                                          <tr>
+                                            <th>S.No.</th>
+                                            <th>Order ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Email Address</th>
+                                            <th>Phone Number</th>  
+                                            <th>Order Date</th>   
+                                            <th>Total Amount</th>   
+                                            <th>Status</th> 
+                                            <th>Rating</th>
+                                            <th>Action</th> 
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                             <tr>
+                                                <td> 01 </td>
+                                                <td>1001</td>
+                                                <td>John Smith</td>
+                                                <td>john@example.com</td>
+                                                <td>+971 123-456-7890</td> 
+                                                <td>2024-02-15</td> 
+                                                <td>150.00 AED</td> 
+                                                <td class="status-close">
+                                                   <span>Delivered</span>
+                                                </td>  
+                                                <td>
+                                                   3.5 <i class="fas fa-star clrrating"></i>
+                                                </td>
+                                                <td>
+                                                   <ul>     
+                                                         <li>
+                                                            <a href="orders-details.html">
+                                                               <i class="ri-eye-line"></i>
+                                                            </a>
+                                                         </li> 
+                                                         <li>
+                                                            <a href="javascript:void(0)">
+                                                               <i class="ri-delete-bin-line"></i>
+                                                            </a>
+                                                         </li>
+                                                   </ul>
+                                                </td>
+                                             </tr> 
+                                             <tr>
+                                                <td> 02 </td>
+                                                <td>1002</td>
+                                                <td>AEDah Johnson</td>
+                                                <td>AEDah@example.com</td>
+                                                <td>+971 123-456-7890</td> 
+                                                <td>2024-02-15</td> 
+                                                <td>150.00 AED</td> 
+                                                <td class="status-pending">
+                                                   <span>Pending</span>
+                                                </td> 
+                                                <td>
+                                                   3.5 <i class="fas fa-star clrrating"></i>
+                                                </td> 
+                                                <td>
+                                                   <ul>     
+                                                         <li>
+                                                            <a href="orders-details.html">
+                                                               <i class="ri-eye-line"></i>
+                                                            </a>
+                                                         </li> 
+                                                         <li>
+                                                            <a href="javascript:void(0)">
+                                                               <i class="ri-delete-bin-line"></i>
+                                                            </a>
+                                                         </li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td> 03 </td>
+                                                <td>1003</td>
+                                                <td>Michael Brown</td>
+                                                <td>michael@example.com</td>
+                                                <td>+971 123-456-7890</td> 
+                                                <td>2024-02-15</td> 
+                                                <td>150.00 AED</td> 
+                                                <td class="status-danger">
+                                                   <span>Cancelled</span>
+                                                </td>  
+                                                <td>
+                                                   3.5 <i class="fas fa-star clrrating"></i>
+                                                </td>
+                                                <td>
+                                                   <ul>     
+                                                         <li>
+                                                            <a href="orders-details.html">
+                                                               <i class="ri-eye-line"></i>
+                                                            </a>
+                                                         </li> 
+                                                         <li>
+                                                            <a href="javascript:void(0)">
+                                                               <i class="ri-delete-bin-line"></i>
+                                                            </a>
+                                                         </li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td> 04 </td>
+                                                <td>1004</td>
+                                                <td>Emily Davis</td>
+                                                <td>emily@example.com</td>
+                                                <td>+971 123-456-7890</td> 
+                                                <td>2024-02-15</td> 
+                                                <td>150.00 AED</td> 
+                                                <td class="status-pending">
+                                                   <span>Processing</span>
+                                                </td> 
+                                                <td>
+                                                   3.5 <i class="fas fa-star clrrating"></i>
+                                                </td> 
+                                                <td>
+                                                   <ul>     
+                                                         <li>
+                                                            <a href="orders-details.html">
+                                                               <i class="ri-eye-line"></i>
+                                                            </a>
+                                                         </li> 
+                                                         <li>
+                                                            <a href="javascript:void(0)">
+                                                               <i class="ri-delete-bin-line"></i>
+                                                            </a>
+                                                         </li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td> 05 </td>
+                                                <td>1005</td>
+                                                <td>Adam Wilson</td>
+                                                <td>adam@example.com</td>
+                                                <td>+971 123-456-7890</td> 
+                                                <td>2024-02-15</td> 
+                                                <td>150.00 AED</td> 
+                                                <td class="status-close">
+                                                   <span>Shipped</span>
+                                                </td>  
+                                                <td>
+                                                   3.5 <i class="fas fa-star clrrating"></i>
+                                                </td>
+                                                <td>
+                                                   <ul>     
+                                                         <li>
+                                                            <a href="orders-details.html">
+                                                               <i class="ri-eye-line"></i>
+                                                            </a>
+                                                         </li> 
+                                                         <li>
+                                                            <a href="javascript:void(0)">
+                                                               <i class="ri-delete-bin-line"></i>
+                                                            </a>
+                                                         </li>
+                                                   </ul>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div> 
+            <!-- footer start-->
+            <div class="container-fluid">
+               <footer class="footer">
+                  <div class="row">
+                     <div class="col-md-12 footer-copyright text-center">
+                        <p class="mb-0">Copyright 2024</p>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+            <!-- footer End-->
+         </div>
+         <!-- index body end -->
+      </div>
+      <!-- Page Body End -->
+      </div> 
+      <!-- page-wrapper End-->
+      <!-- Modal Start -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
+                  <p>Are you sure you want to log out?</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="button-box">
+                     <button type="button" class="btn btn--no" data-bs-dismiss="modal"> No </button>
+                     <button type="button" class="btn btn--yes btn-primary"> Yes </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal fade filter_modal" id="filter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <h5 class="modal-title" id="staticBackdropLabel">Filter</h5> 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <form class="theme-form theme-form-2 mega-form px-4">
+                     <div class="row">
+                         <div class="col-md-6 mb-3">
+                           <label class="form-label-title mb-2">From</label>
+                           <input class="form-control" type="date" placeholder="">
+                         </div>
+                         <div class="col-md-6 mb-3">
+                           <label class="form-label-title mb-2">To</label>
+                           <input class="form-control" type="date" placeholder="">
+                         </div>
+                         <div class="col-md-12 mb-3">
+                           <label class="form-label-title mb-2">Sort By</label>
+                           <div class="col-md-12">
+                              <div class="radio-section row">
+                                 <div class="col-md-4 mb-3">
+                                    <label class="form-label-title mb-2">Merchant Name</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                       <option selected>Select</option>
+                                       <option value="1">John Smith</option>
+                                       <option value="2">Emily Devis</option>
+                                       <option value="3">Adam Wilson</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="form-label-title mb-2">Order Category</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                       <option selected>Select</option>
+                                       <option value="1">Mens Wear</option>
+                                       <option value="2">Kids Wear</option>
+                                       <option value="3">Mobiles</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="form-label-title mb-2">Order Sub Category</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                       <option selected>Select</option>
+                                       <option value="1">Shirt</option>
+                                       <option value="2">Cap</option>
+                                       <option value="3">Samsung</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <label class="form-label-title mb-2">Ratings</label>
+                                    <div class="d-flex justify-content-between">
+                                       <a href="" class="rounded-pill bgclrrating px-3 py-2 text-white">All</a>
+                                       <a href="" class="rounded-pill px-3 py-2 text-dark border">5 <i
+                                             class="fas fa-star clrrating"></i></a>
+                                       <a href="" class="rounded-pill px-3 py-2 text-dark border">4 <i
+                                             class="fas fa-star clrrating"></i></a>
+                                       <a href="" class="rounded-pill px-3 py-2 text-dark border">3 <i
+                                             class="fas fa-star clrrating"></i></a>
+                                       <a href="" class="rounded-pill px-3 py-2 text-dark border">2 <i
+                                             class="fas fa-star clrrating"></i></a>
+                                       <a href="" class="rounded-pill px-3 py-2 text-dark border">1 <i
+                                             class="fas fa-star clrrating"></i></a>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="me-0">
+                                       <input type="radio" name="Newly">
+                                       <i></i>
+                                       <span>Newly Orders</span>
+                                    </label> 
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="me-0">
+                                       <input type="radio" name="Name1">
+                                       <i></i>
+                                       <span>Delivered</span>
+                                   </label>
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="me-0">
+                                       <input type="radio" name="Name">
+                                       <i></i>
+                                       <span>Pending</span>
+                                    </label>
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="me-0">
+                                       <input type="radio" name="Name">
+                                       <i></i>
+                                       <span>Cancelled</span>
+                                    </label>
+                                 </div>
+                                 <div class="col-md-4 mb-3">
+                                    <label class="me-0">
+                                       <input type="radio" name="Name">
+                                       <i></i>
+                                       <span>Shipped</span>
+                                    </label>
+                                 </div>
+                              </div>
+                          </div>
+                         </div> 
+                     </div>
+                  </form>
+                  <div class="button-box mt-3">
+                     <button type="button" class="btn btn--no" data-bs-dismiss="modal">Reset</button>
+                     <button type="button" class="btn btn--yes btn-primary">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal End -->
+      <!-- latest js -->
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <!-- Bootstrap js -->
+      <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- feather icon js -->
+      <!-- scrollbar simplebar js -->
+      <script src="assets/js/scrollbar/simplebar.js"></script>
+      <script src="assets/js/scrollbar/custom.js"></script>
+      <!-- Sidebar jquery -->
+      <script src="assets/js/config.js"></script>
+      <!-- Plugins JS -->
+      <script src="assets/js/sidebar-menu.js"></script>
+      <script src="assets/js/notify/bootstrap-notify.min.js"></script>
+      <!-- Apexchar js -->
+      <script src="assets/js/chart/apex-chart/apex-chart1.js"></script>
+      <script src="assets/js/chart/apex-chart/chart-custom1.js"></script>
+      <!-- slick slider js -->
+      <script src="assets/js/slick.min.js"></script>
+      <!-- Theme js -->
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
