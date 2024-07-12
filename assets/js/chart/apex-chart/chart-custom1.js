@@ -260,7 +260,7 @@ var options = {
         show: false
     },
     colors: ["#DDB18C"],
-    
+
     grid: {
         xaxis: {
             lines: {

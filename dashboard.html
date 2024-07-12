@@ -36,6 +36,8 @@
    <link rel="stylesheet" href="assets/css/vendors/slick.css" />
    <!-- App css -->
    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -124,7 +126,7 @@
                         <i class="ri-apps-line status_toggle middle sidebar-toggle"></i>
                      </div>
                   </div>
-                  <nav class="sidebar-main">
+                  <nav class="sidebar-main mt-4">
                      <div class="left-arrow" id="left-arrow">
                         <i data-feather="arrow-left"></i>
                      </div>
@@ -239,32 +241,82 @@
                   <div class="row">
                      <!-- filter start -->
                      <div class="col-12 mb-4">
-                        <div class="row justify-content-end">
-                           <div class="col-auto">
-                              <a class="filter_btn" data-bs-toggle="modal" data-bs-target="#filter" href="javascript:;"><i class="fas fa-filter"></i></a>
+                        <div class="w-100 align-items-center flex-wrap d-flex justify-content-between">
+                           <div class="">
+                             <h4 class="fs-4 mb-0 text-dark fw-semibold"> Dashboard /</h4>
+                           </div>
+                           <div class="">
+                              <a class="filter_btn" data-bs-toggle="modal" data-bs-target="#filter" href="javascript:;">
+                                 <i class="fas fa-filter"></i>
+                              </a>
                            </div>  
                         </div>
                      </div>
                      <!-- filter end -->
 
                      <!-- chart caard section start -->
-                     <div class="col-sm-6 col-xxl-3 col-lg-6">
-                        <div class="main-tiles border-5 border-0 card-hover card o-hidden">
-                           <div class="custome-1-bg b-r-4 card-body">
-                              <div class="media align-items-center static-top-widget">
-                                 <div class="media-body p-0">
-                                    <span class="m-0">Total Revenue</span>
-                                    <h4 class="mb-0 counter"> 6659 AED</h4>
+                   <div class="col-sm-6 col-xxl-3 col-lg-3 col-md-6 col-12">
+                        <div class="card py-3 px-3 rounded-3 shadow-md">
+                           <div class="d-flex justify-content-between align-items-baseline">
+                              <div class="d-flex flex-wrap justify-content-between gap-3">
+                                 <div class="bg-success text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                    <i class="fa-solid fa-bag-shopping"></i>
                                  </div>
-                                 <div class="align-self-center text-center">
-                                    <i class="fas fa-dollar-sign"></i>
+                                 <div class="text-primary">
+                                    <div class="mb-2">Total Sales</div>
+                                    <h4 class="mb-0">34,945</h4>
                                  </div>
                               </div>
+                              <div class="box-icon-trending up text-primary text-center">
+                                 <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                                 <div class="number">1.56%</div>
+                              </div>
                            </div>
-                        </div>
+                            <div id="line-chart" style="min-height: 30px; width: 100%; height: 28px; background-color: transparent; position: relative;">
+                              <svg class="w-100" height="28" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                       <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                                          <stop offset="0%" stop-color="rgba(34,197,94,0.65)" />
+                                          <stop offset="100%" stop-color="rgba(145,226,175,0.5)" />
+                                       </linearGradient>
+                                    </defs>
+                                    <path d="M0 25 L0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0 L227 25 Z" fill="url(#gradient)" stroke="none"></path>
+                                    <path d="M0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0" fill="none" stroke="#22c55e" stroke-width="3"></path>
+                              </svg>
+                           </div>
                      </div>
-                     <div class="col-sm-6 col-xxl-3 col-lg-6">
-                        <div class="main-tiles border-5 card-hover border-0 card o-hidden">
+                     </div>
+                     <div class="col-sm-6 col-xxl-3 col-lg-3 col-md-6 col-12">
+                        <div class="card py-3 px-3 rounded-3 shadow-md">
+                           <div class="d-flex justify-content-between align-items-baseline">
+                              <div class="d-flex flex-wrap justify-content-between gap-3">
+                                 <div class="bg-danger text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                 </div>
+                                 <div class="text-primary">
+                                    <div class="mb-2">Total Income</div>
+                                    <h4 class="mb-0">34,945</h4>
+                                 </div>
+                              </div>
+                              <div class="box-icon-trending up text-primary text-center">
+                                 <i class="fa-solid fa-arrow-trend-down text-danger"></i>
+                                 <div class="number">8.56%</div>
+                              </div>
+                           </div>
+                           <div id="line-chart-2" style="min-height: 30px; color: rgb(255 215 197);">
+                              <svg class="w-100" height="28" xmlns="http://www.w3.org/2000/svg">
+                                 <defs>
+                                    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="rgb(220 53 69)" />
+                                    <stop offset="100%" stop-color="rgb(255, 215, 197)" />
+                                    </linearGradient>
+                                 </defs>
+                                 <path d="M0 25 L0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0 L227 25 Z" fill="rgb(255, 215, 197)" stroke="none"></path>
+                                 <path d="M0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0" fill="none" stroke="rgb(220 53 69)" stroke-width="3"></path>
+                              </svg>
+                           </div>
+                     </div>
+                        <!-- <div class="main-tiles border-5 card-hover border-0 card o-hidden">
                            <div class="custome-1-bg b-r-4 card-body">
                               <div class="media static-top-widget">
                                  <div class="media-body p-0">
@@ -276,9 +328,71 @@
                                  </div>
                               </div>
                            </div>
+                        </div> -->
+                     </div>
+                      <div class="col-sm-6 col-xxl-3 col-lg-3 col-md-6 col-12">
+                        <div class="card py-3 px-3 rounded-3 shadow-md">
+                           <div class="d-flex justify-content-between align-items-baseline">
+                              <div class="d-flex flex-wrap justify-content-between gap-3">
+                                 <div class="bg-warning text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                    <i class="fa-solid fa-file"></i>
+                                 </div>
+                                 <div class="text-primary">
+                                    <div class="mb-2">Orders Paid</div>
+                                    <h4 class="mb-0">34,945</h4>
+                                 </div>
+                              </div>
+                              <div class="box-icon-trending up text-primary text-center">
+                                 <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                                 <div class="number">2.56%</div>
+                              </div>
+                           </div>
+                           <div id="line-chart-3" style="min-height: 30px; width: 100%; height: 28px; background-color: transparent; position: relative;">
+                              <svg class="w-100" height="28" xmlns="http://www.w3.org/2000/svg">
+                                 <defs>
+                                    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="rgb(116, 125, 198)" />
+                                    <stop offset="100%" stop-color="rgb(209, 213, 226)" />
+                                    </linearGradient>
+                                 </defs>
+                                 <path d="M0 25 L0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0 L227 25 Z" fill="rgb(209, 213, 226)" stroke="none"></path>
+                                 <path d="M0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0" fill="none" stroke="rgb(116, 125, 198)" stroke-width="3"></path>
+                              </svg>
+                           </div>
                         </div>
                      </div>
-                     <div class="col-sm-6 col-xxl-3 col-lg-6">
+                      <div class="col-sm-6 col-xxl-3 col-lg-3 col-md-6 col-12">
+                        <div class="card py-3 px-3 rounded-3 shadow-md">
+                           <div class="d-flex justify-content-between align-items-baseline">
+                              <div class="d-flex flex-wrap justify-content-between gap-3">
+                                 <div class="bg-primary py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                    <i class="fa-solid fa-users"></i>
+                                 </div>
+                                 <div class="text-primary">
+                                    <div class="mb-2">Total Visitor</div>
+                                    <h4 class="mb-0">34,945</h4>
+                                 </div>
+                              </div>
+                              <div class="box-icon-trending up text-primary text-center">
+                                 <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                                 <div class="number">1.56%</div>
+                              </div>
+                           </div>
+                            <div id="line-chart-4" style="min-height: 30px; color: rgb(255 215 197);">
+                              <svg class="w-100" height="28" xmlns="http://www.w3.org/2000/svg">
+                                 <defs>
+                                    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="rgb(34 117 252)" />
+                                    <stop offset="100%" stop-color="rgb(153 186 239)" />
+                                    </linearGradient>
+                                 </defs>
+                                 <path d="M0 25 L0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0 L227 25 Z" fill="rgb(153 186 239)" stroke="none"></path>
+                                 <path d="M0 20 C6.1 18.8 25.2 12 37.8 12.5 S63.4 25.3 75.7 23.2 S100.9 1 113.5 0 S138.8 16.7 151.3 17.5 S177.2 7.8 189.2 5 S220.8 0.8 227 0" fill="none" stroke="rgb(34 117 252)" stroke-width="3"></path>
+                              </svg>
+                           </div>
+                     </div>
+                     </div>
+                     <!-- <div class="col-sm-6 col-xxl-3 col-lg-3 col-md-6 col-12">
                         <div class="main-tiles border-5 card-hover border-0 card o-hidden">
                            <div class="custome-1-bg b-r-4 card-body">
                               <div class="media static-top-widget">
@@ -293,7 +407,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-sm-6 col-xxl-3 col-lg-6">
+                     <div class="col-sm-6 col-xxl-3 col-lg-3 col-md-6 col-12">
                         <div class="main-tiles border-5 card-hover border-0 card o-hidden">
                            <div class="custome-1-bg b-r-4 card-body">
                               <div class="media static-top-widget">
@@ -307,14 +421,14 @@
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div> -->
                      <!-- chart card section End -->
                      <!-- Earning chart star-->
-                     <div class="col-xl-6 d-flex align-items-stretch">
+                     <div class="col-xl-6 col-md-6 col-12 d-flex align-items-stretch">
                         <div class="card w-100 o-hidden card-hover">
                            <div class="card-header border-0 pb-1">
                               <div class="card-header-title">
-                                 <h4>Revenue Report</h4>
+                                 <h4 class="fs-5 mb-0 text-primary">Revenue Report</h4>
                               </div>
                            </div>
                            <div class="card-body p-0">
@@ -324,11 +438,11 @@
                      </div>
                      <!-- Earning chart  end-->
                      <!-- Transactions start-->
-                     <div class="col-xl-6 d-flex align-items-stretch">
+                     <div class="col-xl-6 col-md-6 col-12 d-flex align-items-stretch">
                         <div class="card w-100 o-hidden card-hover">
                            <div class="card-header border-0">
                               <div class="card-header-title">
-                                 <h4>Transactions</h4>
+                                 <h4 class="fs-5 mb-0 text-primary">Transactions</h4>
                               </div>
                            </div>
                            <div class="card-body pt-0">
@@ -403,10 +517,229 @@
                            </div>
                         </div>
                      </div>
+                     <div class="col-xl-8 col-md-6 col-12">
+                        <div class="card py-4 px-4 rounded-4 card-hover">
+                           <div class="card-header border-0">
+                              <div class="card-header-title d-flex flex-wrap justify-content-between align-items-center">
+                                 <h4 class="fs-5 mb-0 text-primary">Top Products</h4>
+                                 <button class="fs-6 text-dark mb-0 btn btn-light">
+                                    view All 
+                                    <i class="fa fa-angle-down"></i>
+                                 </>
+                              </div>
+                              <div class="card-body mt-4">
+                              <div class="table-responsive">
+                                 <table class="table table-hover rounded-3 border">
+                                    <thead>
+                                       <tr class="rounded-3">
+                                          <th class="text-dark text-center">Image</th>
+                                          <th class="text-dark text-center">Name</th>
+                                          <th class="text-dark text-center">Progress</th>
+                                          <th class="text-dark text-center">Status</th>
+                                          <th class="text-dark text-center">Dates</th>
+                                          <th class="text-dark text-center">Action</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr class="text-center">
+                                          <td class="">
+                                             <div class="bg-light my-2 mx-2 text-center py-2 rounded-3">
+                                                <img src="https://themesflat.co/html/remos/images/products/1.png" alt="" class="top-prod-img">
+                                             </div>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             Patimax
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             <div class="main-bg-color rounded-3 w-100">
+                                                <div class="py-1 bg-primary w-25 rounded-3"></div>
+                                             </div>
+                                          </td>
+                                          <td class="text-center">
+                                             <button class="btn text-danger bg-light py-1 px-1 rounded-3">
+                                             <i class="fa fa-dot-circle mx-1 fa-sm"></i>
+                                               Not Available
+                                             </button>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             12-02-2024
+                                          </td>
+                                          <td class="text-center">
+                                             <div class="d-flex w-100 justify-content-center align-items-center gap-2">
+                                                   <button class="btn btn-primary px-1 py-1 ">
+                                                      <i class="fa fa-edit"></i>
+                                                   </button>
+                                                   <button class="btn btn-danger px-1 py-1 ">
+                                                      <i class="fa fa-trash"></i>
+                                                   </button>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                         <tr class="text-center">
+                                          <td class="">
+                                             <div class="bg-light my-2 mx-2 text-center py-2 rounded-3">
+                                                <img src="https://themesflat.co/html/remos/images/products/1.png" alt="" class="top-prod-img">
+                                             </div>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             Patimax
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             <div class="main-bg-color rounded-3 w-100">
+                                                <div class="py-1 bg-primary w-25 rounded-3"></div>
+                                             </div>
+                                          </td>
+                                          <td class="text-center">
+                                             <button class="btn text-success bg-light py-1 px-1 rounded-3">
+                                             <i class="fa fa-dot-circle mx-1 fa-sm"></i>
+                                               Available
+                                             </button>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             12-02-2024
+                                          </td>
+                                          <td>
+                                             <div class="d-flex w-100 justify-content-center align-items-center gap-2">
+                                                   <button class="btn btn-primary px-1 py-1 ">
+                                                      <i class="fa fa-edit"></i>
+                                                   </button>
+                                                   <button class="btn btn-danger px-1 py-1 ">
+                                                      <i class="fa fa-trash"></i>
+                                                   </button>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                         <tr class="text-center">
+                                          <td class="">
+                                             <div class="bg-light my-2 mx-2 text-center py-2 rounded-3">
+                                                <img src="https://themesflat.co/html/remos/images/products/1.png" alt="" class="top-prod-img">
+                                             </div>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             Patimax
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             <div class="main-bg-color rounded-3 w-100">
+                                                <div class="py-1 bg-primary w-25 rounded-3"></div>
+                                             </div>
+                                          </td>
+                                          <td class="text-center">
+                                             <button class="btn text-danger bg-light py-1 px-1 rounded-3">
+                                             <i class="fa fa-dot-circle mx-1 fa-sm"></i>
+                                               Not Available
+                                             </button>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             12-02-2024
+                                          </td>
+                                          <td>
+                                             <div class="d-flex w-100 justify-content-center align-items-center gap-2">
+                                                   <button class="btn btn-primary px-1 py-1 ">
+                                                      <i class="fa fa-edit"></i>
+                                                   </button>
+                                                   <button class="btn btn-danger px-1 py-1 ">
+                                                      <i class="fa fa-trash"></i>
+                                                   </button>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                         <tr class="text-center">
+                                          <td class="">
+                                             <div class="bg-light my-2 mx-2 text-center py-2 rounded-3">
+                                                <img src="https://themesflat.co/html/remos/images/products/1.png" alt="" class="top-prod-img">
+                                             </div>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             Patimax
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             <div class="main-bg-color rounded-3 w-100">
+                                                <div class="py-1 bg-primary w-25 rounded-3"></div>
+                                             </div>
+                                          </td>
+                                          <td class="text-center">
+                                             <button class="btn text-success bg-light py-1 px-1 rounded-3">
+                                             <i class="fa fa-dot-circle mx-1 fa-sm"></i>
+                                                Available
+                                             </button>
+                                          </td>
+                                          <td class="fs-6 text-dark text-center">
+                                             12-02-2024
+                                          </td>
+                                          <td>
+                                             <div class="d-flex w-100 justify-content-center align-items-center gap-2">
+                                                   <button class="btn btn-primary px-1 py-1 ">
+                                                      <i class="fa fa-edit"></i>
+                                                   </button>
+                                                   <button class="btn btn-danger px-1 py-1 ">
+                                                      <i class="fa fa-trash"></i>
+                                                   </button>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-12">
+                        <div class="wg-box card py-4 px-4 rounded-3 card-hover">
+                           <div class="d-flex align-items-center justify-content-between">
+                              <h5 class="text-dark">Earnings</h5>
+                              <div class="dropdown default">
+                                    <button class="btn btn-primary py-2 px-3 text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       <span class="text-white">View</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                       <li><a href="" class="text-primary">This Week</a></li>
+                                       <li><a href="" class="text-primary">Last Week</a></li>
+                                    </ul>
+                              </div>
+                           </div>
+                           <div class="">
+                              <div>
+                                    <div class="mb-2">
+                                       <div class="text-dark d-flex gap-2 mt-2">
+                                          <i class="fa fa-circle text-primary" ></i>
+                                          <div class="text-dark">Revenue</div>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                       <h4 class="text-dark fs-5">$37,802</h4>
+                                       <div class="d-flex align-items-center gap-2">
+                                          <i class="fa-solid fa-arrow-trend-up text-success fa-md"></i>
+                                          <div class="text-dark">0.56%</div>
+                                       </div>
+                                    </div>
+                              </div>
+                              <div>
+                                    <div class="mb-2">
+                                       <div class="text-dark d-flex gap-2 mt-2">
+                                           <i class="fa fa-circle text-success"></i>
+                                          <div class="text-dark">Profit</div>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                       <h4 class="text-dark fs-5">$28,305</h4>
+                                       <div class="d-flex align-items-center gap-2">
+                                          <i class="fa-solid fa-arrow-trend-up text-success fa-md"></i>
+                                          <div class="text-dark">0.56%</div>
+                                       </div>
+                                    </div>
+                              </div>
+                           </div>
+                           <div id="line-chart-6" class="chart-bg"></div>
+                              <!-- ApexChart SVG here -->
+                           </div>
+                        </div>
+
+                     </div>
                      <!-- Transactions end-->
                      <!-- Recent orders start-->
                      <div class="col-sm-12">
-                        <div class="card card-table">
+                        <div class="card card-table card-hover">
                            <div class="card-body">
                               <div class="row">
                                  <div class="col-md-12">
@@ -590,6 +923,79 @@
    <script src="assets/js/slick.min.js"></script>
    <!-- Theme js -->
    <script src="assets/js/script.js"></script>
+
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+    <script>
+       var options = {
+        series: [{
+            name: 'Profit',
+            data: [81, 121, 40, 52, 164, 113, 25] // Example data, replace with your actual data
+        }],
+        chart: {
+            type: 'bar',
+            height: '100%',
+            width: '100%', // Set the width to 100%
+        },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                endingShape: 'rounded',
+                columnWidth: '55%',
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            show: true,
+            width: 2,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'], // Example categories, replace with your actual categories
+            labels: {
+                show: false // Hide x-axis labels
+            },
+            axisBorder: {
+                show: false // Hide x-axis border
+            },
+            axisTicks: {
+                show: false // Hide x-axis ticks
+            }
+        },
+        yaxis: {
+            labels: {
+                show: false // Hide y-axis labels
+            },
+            axisBorder: {
+                show: false // Hide y-axis border
+            },
+            axisTicks: {
+                show: false // Hide y-axis ticks
+            }
+        },
+        fill: {
+            opacity: 1,
+            colors: ['#2275fc', '#2275fc'] // Set the bar color here
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return "$ " + val + " thousands"
+                }
+            }
+        },
+        grid: {
+            show: false // Hide grid
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#line-chart-6"), options);
+    chart.render();
+    </script>
 </body>
 
 </html>
